@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:19
+    container_name: odoo20_postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    ports:
+      - "5432:5432"
+    volumes:
+      - odoo_pg_data:/var/lib/postgresql
+    restart: unless-stopped
+
+volumes:
+  odoo_pg_data:

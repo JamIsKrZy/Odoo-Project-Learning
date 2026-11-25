@@ -1,0 +1,5 @@
+.venv/
+.odoo_data/
+__pycache__/
+*.pyc
+.odoorc

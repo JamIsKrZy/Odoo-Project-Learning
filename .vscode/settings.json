@@ -1,0 +1,25 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/odoo",
+        "${workspaceFolder}/custom_addons"
+    ],
+    "ruff.exclude": [
+        "odoo/**"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "files.watcherExclude": {
+        "**/odoo/.git/**": true
+    },
+    "search.exclude": {
+        "**/odoo/**": true
+    },
+    "Odoo.selectedProfile": "Disabled"
+}

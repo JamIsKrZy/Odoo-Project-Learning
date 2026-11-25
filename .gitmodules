@@ -3,3 +3,7 @@
 	path = odoo
 	url = git@github.com:JamIsKrZy/odoo-learning.git
 	branch = 20.0
+[submodule "addons_tutorial"]
+	path = addons_tutorial
+	url = https://github.com/odoo/tutorials.git
+	branch = 20.0

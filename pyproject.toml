@@ -82,3 +82,18 @@ dev = [
     "ipython>=9.12.0",
     "ruff>=0.17.6",
 ]
+
+[tool.ruff]
+# Exclude the core Odoo submodule from linting/formatting
+exclude = [
+    "odoo",
+    ".venv",
+]
+
+[tool.ruff.lint]
+# Ignore Odoo's PEP8 exceptions (E301/E302 are handled by Ruff's formatter, E501 is line length)
+ignore = [
+    "E501",
+    "E301",
+    "E302",
+]

@@ -14,6 +14,7 @@ specifying the config file. [Refer to this document](https://www.odoo.com/docume
 
 
 
+
 ## How to setup configuration
 The Docker compose only set ups a basic local hosted posgresql. 
 just create a config  file `.odoorc` with the following contents
@@ -34,3 +35,10 @@ data_dir = .odoo_data
 ```
 
 Note: This setup is still in practice use yet. Do not use it for production use project
+
+
+## FAQ 
+#### How to setup Odoo Project
+I have already structured the project file with also utilization of the `uv` toolkit.
+Go to `setup` branch and clone it with `--depth 1`, ``
+
